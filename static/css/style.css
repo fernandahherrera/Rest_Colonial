@@ -1,0 +1,11 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  opacity: 0.8;
+  background-image: url(../img/comida1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  min-height: 100vh;
+}

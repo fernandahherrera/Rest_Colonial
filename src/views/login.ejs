@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, Initial-scale=1.0">
     <title>Login</title>
-    <!--link de css-->
-    <link rel="stylesheet" href="assets/css/estilosLogin.css">
+    <%- include('./shared/import_file.ejs') %>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
    </head>
    <body>
       <form class="form">
         <h2 class="form_title">Inicia Sesión</h2>
-        <p class="form_p">¿Aún no tienes una cuenta?<a href="registro.html" class="form_link">Resgistrate aquí</a></p>
+        <p class="form_p">¿Aún no tienes una cuenta? <a href="registro.html" class="form_link">Resgistrate aquí</a></p>
 
         <div class="form_container">
             <div class="form_group">
-                <input type="email" id="correo" class="form_input" placeholder=" ">
+                <input type="email" id="email" class="form_input">
                 <label for="correo" class="form_label">Correo Electrónico:</label>
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
-                <input type="password" id="contraseña" class="form_input" placeholder=" ">
+                <input type="password" id="password" class="form_input">
                 <label for="contraseña" class="form_label">Contraseña:</label>
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
-                <input type="password" id="confirmar" class="form_input" placeholder=" ">
+                <input type="password" id="confirm_password" class="form_input">
                 <label for="confirmar" class="form_label">Confirmar contraseña:</label>
                 <span class="form_line"></span>
             </div>
@@ -33,7 +33,5 @@
             <input type="submit" class="form_submit" value="Entrar"> 
         </div>
       </form>
-
-      <!--<script src="assets/js/scriptLogin.js"></script>-->
    </body>
 </html>
